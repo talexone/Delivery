@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TTableStorage = class;
@@ -116,7 +116,7 @@ begin
    AddField(fnAmount);
    AddField(fnDateUpdate);
    WhereFieldEqual(fnID, Item.ID);
-   RTable:=FDB.SQL.GetTable(GetSQL);
+   RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if RTable.Count > 0 then
     begin
      Item.Kind:=RTable.FieldAsInteger(0);
@@ -127,7 +127,7 @@ begin
        AddField(TTableProductKind.fnName);
        AddField(TTableProductKind.fnUnit);
        WhereFieldEqual(TTableProductKind.fnID, Item.Kind);
-       KTable:=FDB.SQL.GetTable(GetSQL);
+       KTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
        if KTable.Count > 0 then
         begin
          Item.KindStr:=KTable.FieldAsString(0);
@@ -161,7 +161,7 @@ begin
     if UseFilter then WhereFieldEqual(fnKind, FFilter);
 
     OrderBy(FOrderBy, FOrderByDESC);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     while not RTable.EOF do
      begin
       Item:=TItemStorage.Create(Self);
@@ -175,7 +175,7 @@ begin
         AddField(TTableProductKind.fnName);
         AddField(TTableProductKind.fnUnit);
         WhereFieldEqual(TTableProductKind.fnID, Item.Kind);
-        KTable:=FDB.SQL.GetTable(GetSQL);
+        KTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
         if KTable.Count > 0 then
          begin
           Item.KindStr:=KTable.FieldAsString(0);
@@ -227,7 +227,7 @@ begin
      AddValue(fnDateUpdate, Item.DateUpdate);
 
      FDB.SQL.ExecSQL(GetSQL);
-     Item.ID:=FDB.SQL.GetLastInsertRowID;
+     Item.ID:=FDB.SQL.LastInsertRowID;
      EndCreate;
     end;
   end

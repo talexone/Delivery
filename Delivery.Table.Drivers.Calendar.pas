@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TTableDriverCalendar = class;
@@ -80,7 +80,7 @@ begin
     AddField(TTableDrivers.fnO);
     AddField(TTableDrivers.fnIsAvailable);
     WhereFieldEqual(TTableDrivers.fnIsAvailable, True);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     EndCreate;
     while not RTable.EOF do
      begin
@@ -91,7 +91,7 @@ begin
        begin
         AddField(TTableOrders.fnDate);
         WhereFieldEqual(TTableOrders.fnDriver, Item.DriverID);
-        OrdersTable:=FDB.SQL.GetTable(GetSQL);
+        OrdersTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
         OrdersTable.MoveFirst;
         while not OrdersTable.EOF do
          begin

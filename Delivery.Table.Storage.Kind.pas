@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TTableProductKind = class;
@@ -144,7 +144,7 @@ begin
    AddField(fnComment);
    AddField(fnUnit);
    WhereFieldEqual(fnID, Item.ID);
-   RTable:=FDB.SQL.GetTable(GetSQL);
+   RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if RTable.Count > 0 then
     begin
      Item.Name:=RTable.FieldAsString(0);
@@ -172,7 +172,7 @@ begin
     AddField(fnComment);
     AddField(fnUnit);
     OrderBy(FOrderBy, FOrderByDESC);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     while not RTable.EOF do
      begin
       Item:=TItemProdKind.Create(Self);
@@ -222,7 +222,7 @@ begin
      AddValue(fnComment, Item.Comment);
      AddValue(fnUnit, Ord(Item.ItemUnit));
      FDB.SQL.ExecSQL(GetSQL);
-     Item.ID:=FDB.SQL.GetLastInsertRowID;
+     Item.ID:=FDB.SQL.LastInsertRowID;
      EndCreate;
     end;
   end

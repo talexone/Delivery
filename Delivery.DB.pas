@@ -5,7 +5,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3;
+  HGM.Controls.VirtualTable, SQLang, SQLite;
 
  type
   TUID = record
@@ -77,7 +77,7 @@ procedure TDatabaseCore.CreateSysTable;
 begin
  if not FSQL.TableExists('CRM_SYS_INDEX') then
   begin
-   with SQLLang.SQL.CreateTable('CRM_SYS_INDEX') do
+   with SQLang.SQL.CreateTable('CRM_SYS_INDEX') do
     begin
      AddField('SEC_INDEX', ftString);
      AddField('VALUE', ftInteger);
@@ -95,7 +95,7 @@ end;
 function TDatabaseCore.GetNextVal(Index: string):Integer;
 var Value:Integer;
 begin
- with SQLLang.SQL.Select('CRM_SYS_INDEX') do
+ with SQLang.SQL.Select('CRM_SYS_INDEX') do
   begin
    AddField('VALUE');
    WhereFieldEqual('SEC_INDEX', Index);
@@ -104,7 +104,7 @@ begin
   end;
  if Value < 0 then
   begin
-   with SQLLang.SQL.InsertInto('CRM_SYS_INDEX') do
+   with SQLang.SQL.InsertInto('CRM_SYS_INDEX') do
     begin
      AddValue('SEC_INDEX', Index);
      AddValue('VALUE', 10001);
@@ -116,7 +116,7 @@ begin
  else
   begin
    Result:=Value+1;
-   with SQLLang.SQL.Update('CRM_SYS_INDEX') do
+   with SQLang.SQL.Update('CRM_SYS_INDEX') do
     begin
      AddValue('VALUE', Result);
      WhereFieldEqual('SEC_INDEX', Index);

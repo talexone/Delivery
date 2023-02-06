@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TTableHistory = class;
@@ -136,7 +136,7 @@ begin
    AddField(fnDesc);
    AddField(fnDate);
    WhereFieldEqual(fnID, Item.ID);
-   RTable:=FDB.SQL.GetTable(GetSQL);
+   RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if RTable.Count > 0 then
     begin
      Item.Action:=THistoryAction(RTable.FieldAsInteger(0));
@@ -170,7 +170,7 @@ begin
     if UseFilter then WhereFieldEqual(fnAction, Ord(FFilter));
     OrderBy(FOrderBy, FOrderByDESC);
     WhereField(fnDate, '>', Now - 30);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     while not RTable.EOF do
      begin
       Item:=TItemHistory.Create(Self);
@@ -225,7 +225,7 @@ begin
      AddValue(fnDate, Item.Date);
 
      FDB.SQL.ExecSQL(GetSQL, [PAnsiChar(AnsiString(Item.Desc))]);
-     Item.ID:=FDB.SQL.GetLastInsertRowID;
+     Item.ID:=FDB.SQL.LastInsertRowID;
      EndCreate;
     end;
   end

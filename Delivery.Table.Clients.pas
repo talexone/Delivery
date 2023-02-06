@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TTableClients = class;
@@ -143,7 +143,7 @@ begin
    AddField(fnPhone2);
    AddField(fnDateCreate);
    WhereFieldEqual(fnID, Item.ID);
-   RTable:=FDB.SQL.GetTable(GetSQL);
+   RTable:=TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if RTable.Count > 0 then
     begin
      Item.F:=RTable.FieldAsString(0);
@@ -178,7 +178,7 @@ begin
     AddField(fnPhone1);
     AddField(fnPhone2);
     AddField(fnDateCreate);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     while not RTable.EOF do
      begin
       Item:=TItemClient.Create(Self);
@@ -243,7 +243,7 @@ begin
      AddValue(fnPhone2, Item.Phone2);
      AddValue(fnDateCreate, Now);
      FDB.SQL.ExecSQL(GetSQL);
-     Item.ID:=FDB.SQL.GetLastInsertRowID;
+     Item.ID:=FDB.SQL.LastInsertRowID;
      EndCreate;
     end;
   end

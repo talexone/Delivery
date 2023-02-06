@@ -9,7 +9,7 @@ uses
   System.ImageList, Vcl.Buttons, Vcl.ComCtrls, Vcl.ImgList, Vcl.Menus,
 
   HGM.Button, HGM.Common.Utils, HGM.Controls.SpinEdit, HGM.Common.Notify,
-  HGM.Controls.VirtualTable,
+  HGM.Controls.VirtualTable, HGM.Common.PngUtils,
 
   Delivery.Table.Clients, Delivery.Table.Addresses, Delivery.Table.Orders,
   Delivery.Table.History, Delivery.Table.Storage.Kind, Delivery.DB,

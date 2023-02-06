@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TStorageOperation = (soInc, soDec);
@@ -117,7 +117,7 @@ begin
    AddField(fnDate);
    AddField(fnOperation);
    WhereFieldEqual(fnID, Item.ID);
-   RTable:=FDB.SQL.GetTable(GetSQL);
+   RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if RTable.Count > 0 then
     begin
      Item.Kind:=RTable.FieldAsInteger(0);
@@ -129,7 +129,7 @@ begin
         AddField(TTableProductKind.fnName);
         AddField(TTableProductKind.fnUnit);
         WhereFieldEqual(TTableProductKind.fnID, Item.Kind);
-        KTable:=FDB.SQL.GetTable(GetSQL);
+        KTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
         if KTable.Count > 0 then
          begin
           Item.KindStr:=KTable.FieldAsString(0);
@@ -163,7 +163,7 @@ begin
     if UseFilter then WhereFieldEqual(fnKind, FFilter);
 
     OrderBy(FOrderBy, FOrderByDESC);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     while not RTable.EOF do
      begin
       Item:=TItemStorageProtocol.Create(Self);
@@ -178,7 +178,7 @@ begin
         AddField(TTableProductKind.fnName);
         AddField(TTableProductKind.fnUnit);
         WhereFieldEqual(TTableProductKind.fnID, Item.Kind);
-        KTable:=FDB.SQL.GetTable(GetSQL);
+        KTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
         if KTable.Count > 0 then
          begin
           Item.KindStr:=KTable.FieldAsString(0);
@@ -218,7 +218,7 @@ begin
    AddField(TTableStorage.fnID);
    AddField(TTableStorage.fnAmount);
    WhereFieldEqual(TTableStorage.fnKind, Item.Kind);
-   Table:=FDB.SQL.GetTable(GetSQL);
+   Table:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if Table.Count > 0 then
     begin
      Res:=Table.FieldAsInteger(0);
@@ -260,7 +260,7 @@ begin
     AddValue(fnDate, Now);
     AddValue(fnOperation, Ord(Item.Operation));
     FDB.SQL.ExecSQL(GetSQL);
-    Item.ID:=FDB.SQL.GetLastInsertRowID;
+    Item.ID:=FDB.SQL.LastInsertRowID;
     EndCreate;
    end;
 
@@ -291,7 +291,7 @@ begin
      AddValue(TTableStorage.fnDateUpdate, Now);
 
      FDB.SQL.ExecSQL(GetSQL);
-     Res:=FDB.SQL.GetLastInsertRowID;
+     Res:=FDB.SQL.LastInsertRowID;
      EndCreate;
     end;
   end
@@ -317,7 +317,7 @@ begin
     AddValue(fnDate, Now);
     AddValue(fnOperation, Ord(Item.Operation));
     FDB.SQL.ExecSQL(GetSQL);
-    Item.ID:=FDB.SQL.GetLastInsertRowID;
+    Item.ID:=FDB.SQL.LastInsertRowID;
     EndCreate;
    end;
 

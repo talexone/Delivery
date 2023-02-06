@@ -4,7 +4,7 @@ interface
  uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections, Vcl.Grids,
-  HGM.Controls.VirtualTable, SQLLang, SQLiteTable3, Delivery.DB;
+  HGM.Controls.VirtualTable, SQLang, SQLite, Delivery.DB;
 
  type
   TTableOrders = class;
@@ -148,7 +148,7 @@ begin
    AddField(fnDriver);
    AddField(fnDateCreate);
    WhereFieldEqual(fnID, Item.ID);
-   RTable:=FDB.SQL.GetTable(GetSQL);
+   RTable:= SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
    if RTable.Count > 0 then
     begin
      Item.Number:=RTable.FieldAsInteger(0);
@@ -179,7 +179,7 @@ begin
        AddField(TTableClients.fnO);
        WhereFieldEqual(TTableClients.fnID, Item.Client);
        try
-        CTable:=FDB.SQL.GetTable(GetSQL);
+        CTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
         if CTable.Count > 0 then
          begin
           Item.ClientStr:=CreateFIO(CTable.FieldAsString(0), CTable.FieldAsString(1), CTable.FieldAsString(2));
@@ -197,7 +197,7 @@ begin
        AddField(TTableDrivers.fnO);
        WhereFieldEqual(TTableDrivers.fnID, Item.Driver);
        try
-        CTable:=FDB.SQL.GetTable(GetSQL);
+        CTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
         if CTable.Count > 0 then
          begin
           Item.DriverStr:=CreateFIO(CTable.FieldAsString(0), CTable.FieldAsString(1), CTable.FieldAsString(2));
@@ -244,7 +244,7 @@ begin
     if HideOldRecord then WhereField(fnDate, '>', Now);
 
     OrderBy(FOrderBy, FOrderByDESC);
-    RTable:=FDB.SQL.GetTable(GetSQL);
+    RTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
     while not RTable.EOF do
      begin
       Item:=TItemOrder.Create(Self);
@@ -274,7 +274,7 @@ begin
         AddField(TTableClients.fnO);
         WhereFieldEqual(TTableClients.fnID, Item.Client);
         try
-         CTable:=FDB.SQL.GetTable(GetSQL);
+         CTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
          if CTable.Count > 0 then
           begin
            Item.ClientStr:=CreateFIO(CTable.FieldAsString(0), CTable.FieldAsString(1), CTable.FieldAsString(2));
@@ -292,7 +292,7 @@ begin
         AddField(TTableDrivers.fnO);
         WhereFieldEqual(TTableDrivers.fnID, Item.Driver);
         try
-         CTable:=FDB.SQL.GetTable(GetSQL);
+         CTable:=SQLite.TSQLiteTable(FDB.SQL.GetTable(GetSQL));
          if CTable.Count > 0 then
           begin
            Item.DriverStr:=CreateFIO(CTable.FieldAsString(0), CTable.FieldAsString(1), CTable.FieldAsString(2));
@@ -352,7 +352,7 @@ begin
      AddValue(fnDateCreate, Now);
 
      FDB.SQL.ExecSQL(GetSQL, [PAnsiChar(AnsiString(Item.Data)), PAnsiChar(AnsiString(Item.Comment))]);
-     Item.ID:=FDB.SQL.GetLastInsertRowID;
+     Item.ID:=FDB.SQL.LastInsertRowID;
      EndCreate;
     end;
   end

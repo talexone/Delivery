@@ -181,6 +181,11 @@ object FormMain: TFormMain
         TabOrder = 1
         TabStop = True
         TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+        SubTextFont.Charset = DEFAULT_CHARSET
+        SubTextFont.Color = clWhite
+        SubTextFont.Height = -13
+        SubTextFont.Name = 'Tahoma'
+        SubTextFont.Style = []
       end
     end
     object Panel3: TPanel
@@ -292,6 +297,11 @@ object FormMain: TFormMain
         TabOrder = 0
         TabStop = True
         TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+        SubTextFont.Charset = DEFAULT_CHARSET
+        SubTextFont.Color = clWhite
+        SubTextFont.Height = -13
+        SubTextFont.Name = 'Tahoma'
+        SubTextFont.Style = []
       end
       object ButtonFlatNewOrder: TButtonFlat
         AlignWithMargins = True
@@ -336,6 +346,11 @@ object FormMain: TFormMain
         TabOrder = 1
         TabStop = True
         TextFormat = [tfSingleLine, tfVerticalCenter]
+        SubTextFont.Charset = DEFAULT_CHARSET
+        SubTextFont.Color = clWhite
+        SubTextFont.Height = -13
+        SubTextFont.Name = 'Tahoma'
+        SubTextFont.Style = []
       end
     end
     object ButtonFlat3: TButtonFlat
@@ -381,6 +396,11 @@ object FormMain: TFormMain
       TabOrder = 1
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatClients: TButtonFlat
       AlignWithMargins = True
@@ -424,6 +444,11 @@ object FormMain: TFormMain
       TabOrder = 2
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatOrders: TButtonFlat
       AlignWithMargins = True
@@ -467,6 +492,11 @@ object FormMain: TFormMain
       TabOrder = 3
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatCalendar: TButtonFlat
       AlignWithMargins = True
@@ -510,6 +540,11 @@ object FormMain: TFormMain
       TabOrder = 4
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatStatistics: TButtonFlat
       AlignWithMargins = True
@@ -554,6 +589,11 @@ object FormMain: TFormMain
       TabOrder = 5
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatFeed: TButtonFlat
       AlignWithMargins = True
@@ -597,6 +637,11 @@ object FormMain: TFormMain
       TabOrder = 6
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlat4: TButtonFlat
       AlignWithMargins = True
@@ -641,6 +686,11 @@ object FormMain: TFormMain
       TabOrder = 7
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatDBConfig: TButtonFlat
       AlignWithMargins = True
@@ -684,6 +734,11 @@ object FormMain: TFormMain
       TabOrder = 8
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
     object ButtonFlatStorage: TButtonFlat
       AlignWithMargins = True
@@ -727,6 +782,11 @@ object FormMain: TFormMain
       TabOrder = 9
       TabStop = True
       TextFormat = [tfSingleLine, tfVerticalCenter]
+      SubTextFont.Charset = DEFAULT_CHARSET
+      SubTextFont.Color = clWhite
+      SubTextFont.Height = -13
+      SubTextFont.Name = 'Tahoma'
+      SubTextFont.Style = []
     end
   end
   object PanelClient: TPanel
@@ -854,6 +914,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatDriverClose: TButtonFlat
               AlignWithMargins = True
@@ -898,6 +963,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
           object Panel65: TPanel
@@ -931,7 +1001,7 @@ object FormMain: TFormMain
             object Label40: TLabel
               Left = 17
               Top = 55
-              Width = 56
+              Width = 55
               Height = 17
               Caption = #1058#1077#1083#1077#1092#1086#1085
               Font.Charset = DEFAULT_CHARSET
@@ -944,7 +1014,7 @@ object FormMain: TFormMain
             object Label41: TLabel
               Left = 17
               Top = 86
-              Width = 56
+              Width = 55
               Height = 17
               Caption = #1058#1077#1083#1077#1092#1086#1085
               Font.Charset = DEFAULT_CHARSET
@@ -1094,6 +1164,7 @@ object FormMain: TFormMain
               DefaultRowHeight = 25
               ParentColor = True
               TabOrder = 0
+              StyleElements = [seBorder]
               ItemIndex = -1
               GetData = TableExCurClientAddrsGetData
               Columns = <>
@@ -1247,6 +1318,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatClientClose: TButtonFlat
               AlignWithMargins = True
@@ -1291,6 +1367,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
           object Panel25: TPanel
@@ -1337,7 +1418,7 @@ object FormMain: TFormMain
             object Label11: TLabel
               Left = 17
               Top = 86
-              Width = 56
+              Width = 55
               Height = 17
               Caption = #1058#1077#1083#1077#1092#1086#1085
               Font.Charset = DEFAULT_CHARSET
@@ -1350,7 +1431,7 @@ object FormMain: TFormMain
             object Label13: TLabel
               Left = 17
               Top = 117
-              Width = 56
+              Width = 55
               Height = 17
               Caption = #1058#1077#1083#1077#1092#1086#1085
               Font.Charset = DEFAULT_CHARSET
@@ -1481,6 +1562,7 @@ object FormMain: TFormMain
               DefaultRowHeight = 25
               ParentColor = True
               TabOrder = 0
+              StyleElements = [seBorder]
               ItemIndex = -1
               GetData = TableExCurClientAddrsGetData
               Columns = <>
@@ -1633,6 +1715,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatProdKindClose: TButtonFlat
               AlignWithMargins = True
@@ -1676,6 +1763,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
           object Panel34: TPanel
@@ -1877,6 +1969,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatStorageItemClose: TButtonFlat
               AlignWithMargins = True
@@ -1920,6 +2017,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
           object Panel51: TPanel
@@ -1940,7 +2042,7 @@ object FormMain: TFormMain
             object Label25: TLabel
               Left = 17
               Top = 24
-              Width = 39
+              Width = 38
               Height = 17
               Caption = #1058#1086#1074#1072#1088
               Font.Charset = DEFAULT_CHARSET
@@ -1980,6 +2082,7 @@ object FormMain: TFormMain
               MinValue = 1
               TabOrder = 1
               Value = 1
+              LightButtons = False
             end
             object ButtonFlatStorageItemAddProduct: TButtonFlat
               Left = 410
@@ -2016,6 +2119,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
@@ -2100,6 +2208,7 @@ object FormMain: TFormMain
             Color = clWhite
             DefaultRowHeight = 30
             TabOrder = 0
+            StyleElements = [seBorder]
             ItemIndex = -1
             GetData = TableExClientsGetData
             Columns = <>
@@ -2187,6 +2296,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatClientsEdit: TButtonFlat
               AlignWithMargins = True
@@ -2230,6 +2344,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatClientsDel: TButtonFlat
               AlignWithMargins = True
@@ -2273,6 +2392,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatClientsLoad: TButtonFlat
               AlignWithMargins = True
@@ -2315,6 +2439,11 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
@@ -2396,6 +2525,11 @@ object FormMain: TFormMain
           TabOrder = 0
           TabStop = True
           TextFormat = [tfSingleLine, tfVerticalCenter]
+          SubTextFont.Charset = DEFAULT_CHARSET
+          SubTextFont.Color = clWhite
+          SubTextFont.Height = -13
+          SubTextFont.Name = 'Tahoma'
+          SubTextFont.Style = []
         end
       end
       object Panel37: TPanel
@@ -2441,6 +2575,7 @@ object FormMain: TFormMain
             Color = clWhite
             DefaultRowHeight = 30
             TabOrder = 0
+            StyleElements = [seBorder]
             ItemIndex = -1
             GetData = TableExProdKindGetData
             Columns = <>
@@ -2528,6 +2663,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatProdKindEdit: TButtonFlat
               AlignWithMargins = True
@@ -2571,6 +2711,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatProdKindDel: TButtonFlat
               AlignWithMargins = True
@@ -2614,6 +2759,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatProdKindLoad: TButtonFlat
               AlignWithMargins = True
@@ -2657,6 +2807,11 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
@@ -2741,6 +2896,7 @@ object FormMain: TFormMain
             Color = clWhite
             DefaultRowHeight = 30
             TabOrder = 0
+            StyleElements = [seBorder]
             ItemIndex = -1
             GetData = TableExStorageGetData
             Columns = <>
@@ -2828,6 +2984,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlat6: TButtonFlat
               AlignWithMargins = True
@@ -2871,6 +3032,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlat7: TButtonFlat
               AlignWithMargins = True
@@ -2914,6 +3080,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlat8: TButtonFlat
               AlignWithMargins = True
@@ -2957,6 +3128,11 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
@@ -3038,6 +3214,11 @@ object FormMain: TFormMain
           TabOrder = 0
           TabStop = True
           TextFormat = [tfSingleLine, tfVerticalCenter]
+          SubTextFont.Charset = DEFAULT_CHARSET
+          SubTextFont.Color = clWhite
+          SubTextFont.Height = -13
+          SubTextFont.Name = 'Tahoma'
+          SubTextFont.Style = []
         end
       end
       object Panel54: TPanel
@@ -3083,6 +3264,7 @@ object FormMain: TFormMain
             Color = clWhite
             DefaultRowHeight = 30
             TabOrder = 0
+            StyleElements = [seBorder]
             ItemIndex = -1
             GetData = TableExStorageProtocolGetData
             Columns = <>
@@ -3170,6 +3352,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
@@ -3292,6 +3479,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderClose: TButtonFlat
               AlignWithMargins = True
@@ -3336,6 +3528,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
           object Panel7: TPanel
@@ -3369,7 +3566,7 @@ object FormMain: TFormMain
             object Label7: TLabel
               Left = 17
               Top = 55
-              Width = 30
+              Width = 29
               Height = 17
               Caption = #1050#1091#1076#1072
               Font.Charset = DEFAULT_CHARSET
@@ -3565,6 +3762,11 @@ object FormMain: TFormMain
               TabOrder = 6
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderNormal: TButtonFlat
               Tag = 1
@@ -3602,6 +3804,11 @@ object FormMain: TFormMain
               TabOrder = 7
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderDelivery: TButtonFlat
               Tag = 2
@@ -3639,6 +3846,11 @@ object FormMain: TFormMain
               TabOrder = 8
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderDelivered: TButtonFlat
               Tag = 3
@@ -3676,6 +3888,11 @@ object FormMain: TFormMain
               TabOrder = 9
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderNewClient: TButtonFlat
               Left = 591
@@ -3713,6 +3930,11 @@ object FormMain: TFormMain
               TabOrder = 10
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object TableExOrderProducts: TTableEx
               Left = 114
@@ -3722,6 +3944,7 @@ object FormMain: TFormMain
               Color = clWhite
               DefaultRowHeight = 25
               TabOrder = 11
+              StyleElements = [seBorder]
               ItemIndex = -1
               GetData = TableExOrderProductsGetData
               Columns = <
@@ -3810,6 +4033,11 @@ object FormMain: TFormMain
               TabOrder = 12
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatCurOrderProductDelete: TButtonFlat
               Left = 591
@@ -3847,6 +4075,11 @@ object FormMain: TFormMain
               TabOrder = 13
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatCurOrderProductClear: TButtonFlat
               Left = 591
@@ -3884,6 +4117,11 @@ object FormMain: TFormMain
               TabOrder = 14
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ComboBoxSelOrderDriver: TComboBox
               Left = 114
@@ -3928,6 +4166,11 @@ object FormMain: TFormMain
               TabOrder = 16
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ComboBoxOrderProduct: TComboBox
               Left = 114
@@ -3946,6 +4189,7 @@ object FormMain: TFormMain
               MinValue = 1
               TabOrder = 18
               Value = 1
+              LightButtons = False
             end
           end
         end
@@ -4027,6 +4271,11 @@ object FormMain: TFormMain
           TabOrder = 0
           TabStop = True
           TextFormat = [tfSingleLine, tfVerticalCenter]
+          SubTextFont.Charset = DEFAULT_CHARSET
+          SubTextFont.Color = clWhite
+          SubTextFont.Height = -13
+          SubTextFont.Name = 'Tahoma'
+          SubTextFont.Style = []
         end
       end
       object Panel58: TPanel
@@ -4072,6 +4321,7 @@ object FormMain: TFormMain
             Color = clWhite
             DefaultRowHeight = 30
             TabOrder = 0
+            StyleElements = [seBorder]
             ItemIndex = -1
             GetData = TableExDriversGetData
             Columns = <>
@@ -4158,6 +4408,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatDriverEdit: TButtonFlat
               AlignWithMargins = True
@@ -4201,6 +4456,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatDriverDelete: TButtonFlat
               AlignWithMargins = True
@@ -4244,6 +4504,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatDriversUpdate: TButtonFlat
               AlignWithMargins = True
@@ -4286,6 +4551,11 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
@@ -4407,6 +4677,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderDelete: TButtonFlat
               AlignWithMargins = True
@@ -4450,6 +4725,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderEdit: TButtonFlat
               AlignWithMargins = True
@@ -4493,6 +4773,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatLoadOrders: TButtonFlat
               AlignWithMargins = True
@@ -4536,6 +4821,11 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderSetState3: TButtonFlat
               AlignWithMargins = True
@@ -4580,6 +4870,11 @@ object FormMain: TFormMain
               TabOrder = 4
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderSetState2: TButtonFlat
               AlignWithMargins = True
@@ -4624,6 +4919,11 @@ object FormMain: TFormMain
               TabOrder = 5
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatOrderSetState1: TButtonFlat
               AlignWithMargins = True
@@ -4668,6 +4968,11 @@ object FormMain: TFormMain
               TabOrder = 6
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
           object TableExOrders: TTableEx
@@ -4685,6 +4990,7 @@ object FormMain: TFormMain
             Color = clWhite
             DefaultRowHeight = 30
             TabOrder = 0
+            StyleElements = [seBorder]
             OnDrawCellData = TableExOrdersDrawCellData
             ItemIndex = -1
             GetData = TableExOrdersGetData
@@ -4842,6 +5148,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatFeedNewClient: TButtonFlat
               AlignWithMargins = True
@@ -4886,6 +5197,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object Panel29: TPanel
               AlignWithMargins = True
@@ -4964,6 +5280,11 @@ object FormMain: TFormMain
                 TabOrder = 1
                 TabStop = True
                 TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+                SubTextFont.Charset = DEFAULT_CHARSET
+                SubTextFont.Color = clWhite
+                SubTextFont.Height = -13
+                SubTextFont.Name = 'Tahoma'
+                SubTextFont.Style = []
               end
             end
           end
@@ -4998,6 +5319,7 @@ object FormMain: TFormMain
               Color = clWhite
               DefaultRowHeight = 120
               TabOrder = 0
+              StyleElements = [seBorder]
               OnDrawCellData = TableExHotOrdersDrawCellData
               ItemIndex = -1
               OnItemClick = TableExHotOrdersItemClick
@@ -5100,6 +5422,11 @@ object FormMain: TFormMain
                 TabOrder = 0
                 TabStop = True
                 TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+                SubTextFont.Charset = DEFAULT_CHARSET
+                SubTextFont.Color = clWhite
+                SubTextFont.Height = -13
+                SubTextFont.Name = 'Tahoma'
+                SubTextFont.Style = []
               end
             end
             object Panel27: TPanel
@@ -5177,6 +5504,7 @@ object FormMain: TFormMain
             Font.Style = []
             ParentFont = False
             TabOrder = 3
+            StyleElements = [seBorder]
             OnDrawCellData = TableExFeedDrawCellData
             ItemIndex = -1
             Columns = <>
@@ -5304,6 +5632,7 @@ object FormMain: TFormMain
               Font.Style = []
               ParentFont = False
               TabOrder = 0
+              StyleElements = [seBorder]
               ItemIndex = -1
               GetData = TableExCalendarGetData
               Columns = <
@@ -5562,6 +5891,7 @@ object FormMain: TFormMain
               TabOrder = 0
               Value = 2018
               OnChange = ComboBoxCalendarMonthChange
+              LightButtons = False
               ExplicitHeight = 29
             end
             object ComboBoxCalendarMonth: TComboBox
@@ -5767,6 +6097,11 @@ object FormMain: TFormMain
               TabOrder = 0
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatStorageProtocol: TButtonFlat
               AlignWithMargins = True
@@ -5808,6 +6143,11 @@ object FormMain: TFormMain
               TabOrder = 1
               TabStop = True
               TextFormat = [tfCenter, tfVerticalCenter, tfWordBreak, tfWordEllipsis]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlatTableDrivers: TButtonFlat
               AlignWithMargins = True
@@ -5849,6 +6189,11 @@ object FormMain: TFormMain
               TabOrder = 2
               TabStop = True
               TextFormat = [tfCenter, tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlat1: TButtonFlat
               AlignWithMargins = True
@@ -5892,6 +6237,11 @@ object FormMain: TFormMain
               TabOrder = 3
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
             object ButtonFlat12: TButtonFlat
               AlignWithMargins = True
@@ -5935,6 +6285,11 @@ object FormMain: TFormMain
               TabOrder = 4
               TabStop = True
               TextFormat = [tfSingleLine, tfVerticalCenter]
+              SubTextFont.Charset = DEFAULT_CHARSET
+              SubTextFont.Color = clWhite
+              SubTextFont.Height = -13
+              SubTextFont.Name = 'Tahoma'
+              SubTextFont.Style = []
             end
           end
         end
